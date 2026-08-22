@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f3;
+    color: #333;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #5a2d22;
+    color: white;
+
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #ffd1b3;
+}
+
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero-slider {
+    position: relative;
+    height: calc(100vh - 80px);
+    min-height: 560px;
+    overflow: hidden;
+    background: #2f1b17;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.14) translateX(4%);
+    transition: opacity 1.2s ease, transform 5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+}
+
+.slide-1 {
+    background-image: linear-gradient(rgba(90,45,34,0.62), rgba(90,45,34,0.62)),
+        url("https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=80");
+}
+
+.slide-2 {
+    background-image: linear-gradient(rgba(90,45,34,0.62), rgba(90,45,34,0.62)),
+        url("https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1600&q=80");
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(46, 22, 15, 0.18);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.btn {
+    background-color: #fed9c2;
+    color: white;
+
+    padding: 13px 30px;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+
+/* Categories */
+.hr{
+   background-color: #ffd7ce;
+}
+
+.categories {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.categories h2,
+.products h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background-color: white;
+
+    width: 230px;
+
+    padding: 18px 18px 24px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.category-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.category-card h3 {
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    margin-top: 10px;
+    color: #777;
+}
+
+
+/* Products */
+
+.products {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+
+    width: 250px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.product-card h4 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #5a2d22;
+    color: white;
+
+    border: none;
+
+    padding: 11px 25px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #e89b6c;
+}
+
+
+/* About */
+
+.about {
+    padding: 60px 20%;
+    text-align: center;
+    background-color: #f5dfd2;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #5a2d22;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}

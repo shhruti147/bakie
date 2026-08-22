@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Sweet Crumbs</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide slide-1 active"></div>
+            <div class="slide slide-2"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-text">
+                <h2>Freshly Baked With Love</h2>
+
+                <p>
+                    Delicious cakes, pastries, cookies and breads
+                    made fresh every day.
+                </p>
+
+                <a href="menu.html" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2 class="hr">Our Specialities</h2>
+
+        <div class="category-container">
+ 
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Custom cake">
+                <h3>Cakes</h3>
+                <p>Beautiful cakes for every occasion.</p>
+            </div>
+ 
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Fresh pastry">
+                <h3>Pastries</h3>
+                <p>Fresh and delicious pastries.</p>
+            </div>
+ 
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80" alt="Bakery cookies">
+                <h3>Cookies</h3>
+                <p>Crispy cookies baked with love.</p>
+            </div>
+ 
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Donuts">
+                <h3>Donuts</h3>
+                <p>Soft and sweet donuts.</p>
+            </div>
+ 
+        </div>
+
+    </section>
+
+
+    <!-- Best Sellers -->
+    <section class="products">
+
+        <h2>Best Sellers</h2>
+
+        <div class="product-container">
+ 
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate cake">
+ 
+                <h3>Chocolate Cake</h3>
+ 
+                <p>Rich chocolate cake with creamy frosting.</p>
+ 
+                <h4>₹499</h4>
+ 
+                <button>Add to Cart</button>
+            </div>
+ 
+ 
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80" alt="Vanilla cupcake">
+ 
+                <h3>Vanilla Cupcake</h3>
+ 
+                <p>Soft vanilla cupcake with delicious cream.</p>
+ 
+                <h4>₹80</h4>
+ 
+                <button>Add to Cart</button>
+            </div>
+ 
+ 
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80" alt="Chocolate cookies">
+ 
+                <h3>Chocolate Cookies</h3>
+ 
+                <p>Crispy cookies filled with chocolate chips.</p>
+ 
+                <h4>₹120</h4>
+ 
+                <button>Add to Cart</button>
+            </div>
+ 
+ 
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Butter croissant">
+ 
+                <h3>Butter Croissant</h3>
+ 
+                <p>Freshly baked crispy and buttery croissant.</p>
+ 
+                <h4>₹100</h4>
+ 
+                <button>Add to Cart</button>
+            </div>
+ 
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about">
+
+        <h2>About Sweet Crumbs</h2>
+
+        <p>
+            Sweet Crumbs is an online bakery ordering system
+            where customers can explore our delicious bakery
+            products and order them easily from home.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Phone: 98765 43210</p>
+        <p>Email: sweetcrumbs@gmail.com</p>
+        <p>Location: Pune, Maharashtra</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sweet Crumbs Bakery | Online Bakery Ordering System</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 4000);
+    </script>
+
+</body>
+</html>
